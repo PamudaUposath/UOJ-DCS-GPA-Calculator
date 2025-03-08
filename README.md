@@ -1,4 +1,4 @@
-Here is the `README.md` file in a single block:  
+
 
 ```markdown
 # JaffnaU-CS-GPA-Calculator
@@ -14,7 +14,7 @@ A web-based GPA calculator tailored for direct-intake Computer Science students 
 
 ## Project Structure
 
-```
+
 JaffnaU-CS-GPA-Calculator/
 ├── index.html      # Main HTML file with the structure and course input fields
 ├── styles.css      # CSS file for styling the interface
