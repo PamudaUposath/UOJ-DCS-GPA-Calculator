@@ -1,4 +1,3 @@
-```markdown
 # JaffnaU-CS-GPA-Calculator
 
 A web-based GPA calculator tailored for direct-intake Computer Science students at the University of Jaffna. This tool calculates the current GPA based on entered marks and estimates the average grade needed in upcoming courses to reach the target overall GPA of 3.0, which is required for 4th-year eligibility.
@@ -67,4 +66,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 For any questions or feedback, please contact:  
 📧 [pamudaugoonatilake@gmail.com](mailto:pamudaugoonatilake@gmail.com)
-```
+
