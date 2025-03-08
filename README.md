@@ -1,4 +1,4 @@
-# JaffnaU-CS-GPA-Calculator
+# UOJ-CS-GPA-Calculator
 
 A web-based GPA calculator tailored for direct-intake Computer Science students at the University of Jaffna. This tool calculates the current GPA based on entered marks and estimates the average grade needed in upcoming courses to reach the target overall GPA of 3.0, which is required for 4th-year eligibility.
 
@@ -12,7 +12,7 @@ A web-based GPA calculator tailored for direct-intake Computer Science students 
 ## Project Structure
 
 ```
-JaffnaU-CS-GPA-Calculator/
+UOJ-CS-GPA-Calculator/
 ├── index.html      # Main HTML file with the structure and course input fields
 ├── styles.css      # CSS file for styling the interface
 └── script.js       # JavaScript file containing the GPA calculation logic
@@ -23,13 +23,13 @@ JaffnaU-CS-GPA-Calculator/
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/JaffnaU-CS-GPA-Calculator.git
+   git clone https://github.com/YOUR_USERNAME/UOJ-CS-GPA-Calculator.git
    ```
 
 2. **Navigate to the Project Directory:**
 
    ```bash
-   cd JaffnaU-CS-GPA-Calculator
+   cd UOJ-CS-GPA-Calculator
    ```
 
 3. **Open the Application:**
