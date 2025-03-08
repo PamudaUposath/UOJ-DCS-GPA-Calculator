@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: #003366;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  /* Flex container for side-by-side layout */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .courses, .grade-mapping {
+    flex: 1 1 300px;
+  }
+  
+  /* Table styling */
+  table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background: #f0f0f0;
+  }
+  
+  /* Dropdown styling */
+  select {
+    width: 100%;
+    max-width: 100px;
+  }
+  
+  /* Button and result styling */
+  .btn {
+    background: #003366;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .btn:hover {
+    background: #002244;
+  }
+  
+  .result {
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  /* Header rows for grouping */
+  .year-header {
+    background-color: #e6f7ff;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .semester-header {
+    background-color: #f2f2f2;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  /* Course row styling by year */
+  .course.year-1 {
+    background-color: #ffffff;
+  }
+  
+  .course.year-2 {
+    background-color: #f9f9f9;
+  }
+  
+  /* Make the grade mapping table small */
+  .grade-mapping table {
+    font-size: 12px;
+    width: auto;
+  }
+  
+  .grade-mapping th, .grade-mapping td {
+    padding: 4px 6px;
+  }
+  

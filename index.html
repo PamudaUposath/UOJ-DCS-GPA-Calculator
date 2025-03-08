@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Jaffna University - CS GPA Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Jaffna University - Computer Science GPA Calculator</h1>
+
+<p>
+  Select your grade for each completed course (or leave blank if not taken yet) and click 
+  <strong>Calculate GPA</strong>. The calculator will display your current GPA and the average GPA required in upcoming courses to achieve an overall 3.0.
+</p>
+
+<div class="container">
+  <div class="courses">
+    <h2>Course Grades</h2>
+    <table id="coursesTable">
+      <thead>
+        <tr>
+          <th>Course Code</th>
+          <th>Course Title</th>
+          <th>Credits</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 1st Year Header -->
+        <tr class="year-header">
+          <td colspan="4">1st Year</td>
+        </tr>
+        <!-- Semester 1 Header -->
+        <tr class="semester-header">
+          <td colspan="4">Semester 1</td>
+        </tr>
+        <tr class="course year-1">
+          <td>CSC101S3</td>
+          <td>Foundations of Computer Science</td>
+          <td>3</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-1">
+          <td>CSC103S3</td>
+          <td>Introduction to Computer Systems</td>
+          <td>3</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-1">
+          <td>CSC104S2</td>
+          <td>Mathematics for Computing I</td>
+          <td>2</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-1">
+          <td>CSC105S3</td>
+          <td>Statistics for Computing I</td>
+          <td>3</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-1">
+          <td>CSC107S2</td>
+          <td>Multimedia Technologies</td>
+          <td>2</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-1">
+          <td>CSC110S2</td>
+          <td>Organisational Behaviour</td>
+          <td>2</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+
+        <!-- Semester 2 Header (1st Year) -->
+        <tr class="semester-header">
+          <td colspan="4">Semester 2</td>
+        </tr>
+        <tr class="course year-1">
+          <td>CSC109S2</td>
+          <td>Intro to Security & Cryptography</td>
+          <td>2</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-1">
+          <td>CSC106S3</td>
+          <td>Human Computer Interaction</td>
+          <td>3</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-1">
+          <td>CSC108S2</td>
+          <td>Design of Algorithms</td>
+          <td>2</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-1">
+          <td>CSC102S3</td>
+          <td>Computer Programming I</td>
+          <td>3</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-1">
+          <td>CSC111S2</td>
+          <td>Mathematics for Computing II</td>
+          <td>2</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <!-- Added missing course -->
+        <tr class="course year-1">
+          <td>CSC112S3</td>
+          <td>Statistics for Computing II</td>
+          <td>3</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+
+        <!-- 2nd Year Header -->
+        <tr class="year-header">
+          <td colspan="4">2nd Year</td>
+        </tr>
+        <!-- Semester 3 Header -->
+        <tr class="semester-header">
+          <td colspan="4">Semester 3</td>
+        </tr>
+        <tr class="course year-2">
+          <td>CSC201S2</td>
+          <td>Database Systems Concepts & Design</td>
+          <td>2</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-2">
+          <td>CSC205S2</td>
+          <td>Software Engineering</td>
+          <td>2</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-2">
+          <td>CSC206S4</td>
+          <td>Mathematics for Computing III</td>
+          <td>4</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-2">
+          <td>CSC207S3</td>
+          <td>Computer Architecture</td>
+          <td>3</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-2">
+          <td>CSC208S3</td>
+          <td>Concepts of Programming Languages</td>
+          <td>3</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+
+        <!-- Semester 4 Header (2nd Year) -->
+        <tr class="semester-header">
+          <td colspan="4">Semester 4</td>
+        </tr>
+        <tr class="course year-2">
+          <td>CSC202S2</td>
+          <td>Computer Programming II</td>
+          <td>2</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-2">
+          <td>CSC203S2</td>
+          <td>Operating Systems</td>
+          <td>2</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-2">
+          <td>CSC204S2</td>
+          <td>Data Structures & Algorithms</td>
+          <td>2</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-2">
+          <td>CSC209S3</td>
+          <td>Bioinformatics</td>
+          <td>3</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-2">
+          <td>CSC210S3</td>
+          <td>Web Technologies</td>
+          <td>3</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-2">
+          <td>CSC211S2</td>
+          <td>Emerging Trends in CS</td>
+          <td>2</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="course year-2">
+          <td>CSC212S2</td>
+          <td>Professional Practice</td>
+          <td>2</td>
+          <td>
+            <select>
+              <option value="">--Select--</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="calculateButton" class="btn">Calculate GPA</button>
+    <div id="results" class="result"></div>
+  </div>
+
+  <div class="grade-mapping">
+    <h2>Grade Mapping</h2>
+    <table id="gradeMapping">
+      <thead>
+        <tr>
+          <th>Grade</th>
+          <th>Mark Range</th>
+          <th>GPA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>A+</td><td>85–100</td><td>4.0</td></tr>
+        <tr><td>A</td><td>75–84</td><td>4.0</td></tr>
+        <tr><td>A-</td><td>70–74</td><td>3.70</td></tr>
+        <tr><td>B+</td><td>65–69</td><td>3.30</td></tr>
+        <tr><td>B</td><td>60–64</td><td>3.00</td></tr>
+        <tr><td>B-</td><td>55–59</td><td>2.70</td></tr>
+        <tr><td>C+</td><td>50–54</td><td>2.30</td></tr>
+        <tr><td>C</td><td>45–49</td><td>2.00</td></tr>
+        <tr><td>C-</td><td>40–44</td><td>1.70</td></tr>
+        <tr><td>D</td><td>30–39</td><td>1.00</td></tr>
+        <tr><td>E</td><td>0–29</td><td>0.00</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
