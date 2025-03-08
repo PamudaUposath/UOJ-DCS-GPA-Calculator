@@ -1,5 +1,3 @@
-
-
 ```markdown
 # JaffnaU-CS-GPA-Calculator
 
@@ -14,12 +12,12 @@ A web-based GPA calculator tailored for direct-intake Computer Science students 
 
 ## Project Structure
 
-
+```
 JaffnaU-CS-GPA-Calculator/
 ├── index.html      # Main HTML file with the structure and course input fields
 ├── styles.css      # CSS file for styling the interface
 └── script.js       # JavaScript file containing the GPA calculation logic
-
+```
 
 ## Installation
 
@@ -38,18 +36,18 @@ JaffnaU-CS-GPA-Calculator/
 3. **Open the Application:**
 
    Open the `index.html` file in your favorite web browser (e.g., Chrome, Firefox, or Edge). You can simply double-click the file or run:
-   
+
    - **macOS:** `open index.html`
    - **Windows:** `start index.html`
 
 ## Usage
 
 1. **Enter Your Marks:**
-   - Input the marks (from 0 to 100) for each course as per your completed semesters.
-  
+   - Select the grade (A+, A, A-, etc.) for each completed course from the dropdown.
+
 2. **Calculate GPA:**
    - Click the **"Calculate GPA"** button.
-   - The application will display your current GPA based on the entered marks.
+   - The application will display your current GPA based on the entered grades.
    - It will also show the average grade needed in the upcoming courses to ensure your overall GPA reaches 3.0.
 
 3. **Customization:**
@@ -67,5 +65,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any questions or feedback, please contact [pamudaugoonatilake@gmail.com].
+For any questions or feedback, please contact:  
+📧 [pamudaugoonatilake@gmail.com](mailto:pamudaugoonatilake@gmail.com)
 ```
