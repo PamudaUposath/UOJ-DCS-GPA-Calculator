@@ -19,7 +19,7 @@ JaffnaU-CS-GPA-Calculator/
 ├── index.html      # Main HTML file with the structure and course input fields
 ├── styles.css      # CSS file for styling the interface
 └── script.js       # JavaScript file containing the GPA calculation logic
-```
+
 
 ## Installation
 
